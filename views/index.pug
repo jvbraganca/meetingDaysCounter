@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  div.container
+    div.row
+      .col
+        h1.text-center.display-3 O meeting é hoje?
+        h2.lead.display-4.text-center= isMeetingToday
+    div.row
+      div.col.mt-3
+        h1.text-center ⏰ Faltam <strong>#{days}</strong> dias, <strong>#{hours}</strong> horas e 
+          |<strong>#{minutes}</strong> 
+          if minutes == 1
+            | minuto 
+          else
+            | minutos 
+          | para o Meeting 220!
