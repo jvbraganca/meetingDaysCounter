@@ -1,6 +1,8 @@
-let moment = require("moment")
+let moment = require("moment-timezone")
 
 moment().locale("pt-br")
+moment().tz("America/Sao_Paulo").format();
+
 
 const getTimeDifference = (date) => {
   let meetingDay = moment(date)
