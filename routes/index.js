@@ -10,9 +10,9 @@ let {
 /* GET home page. */
 router.get("/", function (req, res, next) {
   res.render("index", {
-    days: getTimeDifference("2021-10-08"),
-    hours: getHoursToMd(),
-    minutes: getMinutesToNextHour(),
+    days: getTimeDifference("2021-10-08") || 0,
+    hours: getHoursToMd() || 0,
+    minutes: getMinutesToNextHour() || 0,
     isMeetingToday: isMeetingToday("2021-10-08"),
   })
 })
