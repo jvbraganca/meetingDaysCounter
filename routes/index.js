@@ -13,7 +13,7 @@ router.get("/", function (req, res, next) {
     days: getTimeDifference("2020-11-19"),
     hours: getHoursToMd(),
     minutes: getMinutesToNextHour(),
-    isMeetingToday: isMeetingToday("2020-11-19"),
+    isMeetingToday: isMeetingToday("2021-10-08"),
   })
 })
 
